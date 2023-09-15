@@ -17,10 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 # Importacion de la vista creada en view para asignarsela a su correspondiente URL
-from aguas_cururu_business.view import bienvenida, bienvenidaRojo
+from aguas_cururu_business.view import bienvenida, bienvenidaRojo, categoriaEdad, obtenerMomentoActual
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('bienvenida/', bienvenida),
-    path('bienvenida123/', bienvenidaRojo)
+    path('bienvenida123/', bienvenidaRojo),
+    path('categoriaEdad/<int:edad>', categoriaEdad),
+    path('fechaActual/', obtenerMomentoActual)
 ]
