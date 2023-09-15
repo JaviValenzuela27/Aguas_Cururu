@@ -1,2 +1,2 @@
-Comando para iniciar el servidor:
+Comando para iniciar el servidorrrrrrr:
 python manage.py runserver
