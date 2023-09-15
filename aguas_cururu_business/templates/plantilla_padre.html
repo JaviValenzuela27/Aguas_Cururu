@@ -1,15 +1,18 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{% block title %}{% endblock %}</title>
+    <link type="text/css" rel="stylesheet" href="{% static "css/plantillaBarraNavegacion.css" %}">
   </head>
   <body>
     {% include "plantilla_navegacion.html" %}
     <h1>Javier Valenzuela</h1>
-
+    <img src="{% static "img/imagen.png" %}" alt="">
     {% block content %} {% endblock %}
     <p>Este es el pie de pagina</p>
+    <script src="{% static "js/plantillaPadre.js" %}"></script>
   </body>
 </html>
