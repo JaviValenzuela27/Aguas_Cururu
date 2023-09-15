@@ -54,7 +54,7 @@ ROOT_URLCONF = 'aguas_cururu_business.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['C:/Users/janto/Documents/PROYECTO_AGUAS CURURU/aguas_cururu_business/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

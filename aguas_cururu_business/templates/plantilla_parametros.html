@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plantilla que recibe parametros</title>
+    <style>
+      li {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Nombre de la persona: {{nombrePersonal}}</h1>
+    <!-- Fecha y hora actual -->
+    <h2>
+      Fecha Actual: {{fechaActual.day}} / {{fechaActual.month}} /
+      {{fechaActual.year}}
+    </h2>
+    <h3>
+        Cantidad de lenguajes: {{lenguajes|length}}
+    </h3>
+
+    <ul>
+      {% for leng in lenguajes %} {% if leng == 'Python' %}
+      <li style="color: yellow">{{leng}}</li>
+      {% else %}
+      <li>{{leng|first}}:{{leng|lower}}</li>
+      {% endif %} {% endfor %}
+    </ul>
+  </body>
+</html>
